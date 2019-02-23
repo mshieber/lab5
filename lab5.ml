@@ -147,7 +147,7 @@ let rangecheck x = 0 <= x && x <= 255
 
 let validated_rgb (col : color) : color =
   match col with
-  | Simple (colname) -> col
+  | Simple (_) -> col
   | RGB (r, g, b) -> if rangecheck r && rangecheck g && rangecheck b
                           then col
                           else raise(Invalid_color "Not in RGB Scale")
