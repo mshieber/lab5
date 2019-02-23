@@ -387,7 +387,7 @@ people in a given family. Be sure you count all spouses and children.
 let rec count_people (f : family) : int =
   match f with
   | Single _ -> 1
-  | Family (_, _, c) -> 2 + List.fold_left (+) 0 (List.map count_people c) ;;
+  | Family (_, _, c) -> 2 + List.fold_left (+) 0 (List.map count_people c)
 ;;
 
 
