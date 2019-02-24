@@ -2,7 +2,7 @@
                               CS51 Lab 5
            Variants, algebraic types, and pattern matching
  *)
-
+(*
 Part 1: Colors as an algebraic data type
 
 In this lab you'll use algebraic data types to create several data
